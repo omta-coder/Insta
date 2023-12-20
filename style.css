@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box{
+    height: 540px;
+    width: 390px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(131, 125, 124);
+    position: relative;
+}
+#header{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+#header h4{
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+}
+#nav-prt1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#nav-prt1 i{
+    font-size: 23px;
+}
+#nav{
+    height: 120px;
+    width: 100%;
+    padding: 15px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-bottom: 1px solid silver;
+}
+#nav::-webkit-scrollbar{
+    display: none;
+}
+#circle{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background:linear-gradient(red,pink,yellow,green,purple,rgb(214, 111, 128));
+    padding: 3px;
+    display: inline-block;
+}
+#circle img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
+}
+#center{
+    height: calc(100% - 230px);
+    width: 100%;
+}
+#nav-ctr{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+#nav-ctr1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#nav-ctr1 img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+#nav-ctr2 i{
+   font-size: 23px;
+}
+#container{
+    height: calc(100% - 50px);
+    width: 100%;
+    position: relative;
+}
+#container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#container i{
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    font-size: 50px;
+    color: #fff;
+    transition: transform ease 0.5s;
+}
+#footer{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-top: 1px solid silver;
+}
+#footer i{
+    font-size: 25px;
+}
+#footer img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
